@@ -2,7 +2,7 @@ import random
 import time
 
 def sortear_numeros(inicio, fin, cantidad):
-    # Verifica que la cantidad no exceda el rango disponible
+    # comprueba que la cantidad no supere el rango disponible
     rango_total = fin - inicio + 1
     if cantidad > rango_total:
         print(f"Error: No se pueden sortear {cantidad} números entre {inicio} y {fin}.")
@@ -27,7 +27,7 @@ if __name__ == "__main__":
     try:
         inicio = int(input("Ingresa el número inicial del sorteo: "))
         fin = int(input("Ingresa el número final del sorteo: "))
-        cantidad = int(input("¿Cuántos números quieres sortear?: "))
+        cantidad = int(input("¿Cuántos números queres sortear?: "))
 
         sortear_numeros(inicio, fin, cantidad)
 
